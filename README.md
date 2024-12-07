@@ -1,5 +1,5 @@
 # Ex.06 Book Front Cover Page Design
-# Date:02/12/2024
+# Date:30/10/2024
 # AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -29,12 +29,14 @@ Insert the images in their appropriate places.
 Publish the website in the LocalHost.
 
 # PROGRAM:
-```
+```python
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book cover</title>
+</head>
     <style>
         .bookpage{
 
@@ -45,7 +47,7 @@ Publish the website in the LocalHost.
             margin-right: auto;
             padding: 100px;
             font-family: ' Arial, sans-serif';
-            background-image: url("c:\\Users\\admin\\Downloads\\ghost.avif");
+            background-image: url("/static/ghost.avif");
             background-size: cover;
         }
             
@@ -54,24 +56,16 @@ Publish the website in the LocalHost.
             display: inline;
             position: relative;
             color:rgb(0, 0, 0);
-            top:430px;
+            top:350px;
+            left: 140px;
             font-family:Georgia;
-            font-size:large;
+            font-size:30px;
         }
-        .descript{
-        
-        display: inline;
-        position: relative;
-        color:rgb(120, 3, 3);
-        top:200px;
-        
-        font-family:Georgia;
-        font-size: medium;
-        }
+    
         .booktitle{
             color:rgb(0, 0, 0);
             font-family: Roquen;
-            font-size: larger;
+            font-size: 25px;
             text-align: center;
             position: relative;
             top: 30px;
@@ -81,40 +75,42 @@ Publish the website in the LocalHost.
         .subtitle{
             color:rgb(0, 0, 0);
             font-family:unicorn;
-            font-size:larger;
+            font-size:25px;
             position: relative;
             top:60px;
         }
-        
-        </style>
-        <title>Book Cover Page</title>
-        </head>
-        <body>
-        <div class="bookpage">
-            
-            <div class="booktitle">
-                <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(251, 2, 2);"> THE PARANORMAL THINGS</h1></div>
-            <div class="subtitle" style="text-align: center;color: rgb(4, 51, 81);">
-                 STORIES  ABOUT  PARANORMAL  THINGS
-            </div>
-            <div class="subtitle" style="color: rgb(130, 32, 32);text-align: center;">
-                 GHOST X SCIENCE
-            </div>             
-            <div class="author" style="color: rgb(255, 255, 255);text-align:center;">
-                --ALBERT SK--
-            </div>
-            <div class="descript" style="color: rgb(205, 21, 5);text-align: center;">
-            DON'T READ THIS BOOK ALONE
-            </div>
-            
+        .img{
+            position: relative;
+            top: 220px;
+            right: 90px;
+        }
+    </style>
+      
+<body>
+    <div class="bookpage">
+        <div class="booktitle">
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: rgb(251, 2, 2);"> THE PARANORMAL THINGS</h1></div>
+        <div class="subtitle" style="text-align: center;color: rgb(4, 51, 81);">
+            STORIES  ABOUT  PARANORMAL  THINGS
         </div>
-        </body>
+        <div class="subtitle" style="color: rgb(130, 32, 32);text-align: center;">
+             GHOST X SCIENCE
+        </div>             
+        <div class="author" style="color: rgb(255, 0, 0);text-align:center;">
+             AUTHOR--ALBERT
+        </div>
+        <div class="img">
+        <img src="/static/Screenshot 2024-12-07 005546.png" width="150" height="150">
+        </div>
+    </div>
+</body>
         
 
 </html>
 ```
 # OUTPUT:
-![Screenshot 2024-11-25 112932](https://github.com/user-attachments/assets/27fd6405-055b-4069-88de-54c0ff426764)
+![Screenshot 2024-12-07 125643](https://github.com/user-attachments/assets/c3b790f8-6a77-478e-8e5e-fe8d333e71c2)
+
 
 
 # RESULT:
